@@ -4,7 +4,7 @@
 
 [Join the discussion on Hacker News!](https://news.ycombinator.com/item?id=43805189)
 
-> ⚠️ To start using PPORT, simply visit [pport.top](https://pport.top) and
+> ⚠️ To start using PPORT, simply visit [pport.deno.dev](https://pport.deno.dev) and
 > follow the instructions.
 
 ## Why?
@@ -49,7 +49,7 @@ tasks:
 When you run:
 
 ```bash
-curl -fsSL pport.top | sh
+curl -fsSL pport.deno.dev | sh
 ```
 
 the following sequence happens:
@@ -57,7 +57,7 @@ the following sequence happens:
 - The server detects the `User-Agent` from `curl` and responds with a shell
   installer script.
 - The shell script checks if Deno is installed (and installs it if needed).
-- It then runs `deno install`, triggering further requests to `pport.top`.
+- It then runs `deno install`, triggering further requests to `pport.deno.dev`.
 - The server, seeing the `User-Agent` from Deno, responds by serving the
   required `.ts` source files.
 

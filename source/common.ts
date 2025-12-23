@@ -4,7 +4,7 @@ export const kv = await Deno.openKv();
 export const baseURL = Deno.permissions.querySync &&
     Deno.permissions.querySync({ name: "env" }).state === "granted"
   ? Deno.env.get(`BASE_URL`) || "https://localhost:8000"
-  : `https://pport.top`;
+  : `https://pport.deno.dev`;
 
 export const domain = baseURL.split("//")[1];
 
